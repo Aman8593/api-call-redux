@@ -15,6 +15,18 @@
     grid-template-columns: repeat(4, 1fr);
     max-width: 1250px;
     width: 100%;
+    margin-bottom: 10px;
+    @media (max-width: 1200px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: 1fr;
+    }
   }
   .card {
     background-color: #fff;
@@ -32,14 +44,10 @@
       max-height: 200px; // Adjust as needed
       object-fit: cover;
     }
-    .ant-card-meta {
-      padding: 0;
-
-
-    
+    .ant-card-body {
+      padding: 15px;
     }
     
   }
-  
 
 }
